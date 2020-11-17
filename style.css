@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    padding:0;
+    margin:0 auto;
+    background-color: #E2C4C4;
+    overflow-x: hidden;
+}
+
+.titre {
+    font-family: 'Reenie Beanie', cursive;
+    color:white;
+    font-size: 70px;
+    margin:30px;
+    padding:20px;
+    letter-spacing: 5px;
+}
+
+/*----------------------------NAV BAR-------------------------------*/
+
+nav {
+    height:12vh;
+    width: 100%;
+    margin: auto;
+    background-color: black;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.nav-links {
+    font-size:18px;
+    display:flex;
+    justify-content: space-around;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+}
+
+li {
+    list-style: none;
+    margin:20px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+li:hover {
+    border-bottom:1 px solid white;
+}
+
+.burger {
+    display:none;
+}
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color:white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/*---------------------PRESENTATION ARTICLES-----------------------*/
+
+.avatar {
+    margin:3x;
+}
+
+.moi {
+    vertical-align: middle;
+    width:55px;
+    height:55px;
+    border-radius: 50%;
+    border-color: white;
+    position: absolute;
+}
+
+h1 {
+    font-size: 19px;
+    animation: drop ease;
+    animation-duration: 2s;
+    text-align: center;
+    font-weight: bold;
+    margin: 13px;
+   
+}
+
+h2 {
+    font-size:15px;
+    font-weight: normal;
+    text-align: center;
+    padding:0px;
+}
+
+img {
+    width: 355px;
+    height:333px;
+}
+
+.articles {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: pink;
+}
+
+.coller {
+    line-height: 2px;
+    padding:10px;
+}
+
+.numero1 {
+    margin:50px;
+    width:380px;
+    height:585px;
+    background-color: black;
+    box-shadow: 0 10px 30px rgba(0,0,0, 0.2);
+    padding:30px;
+    color:white;
+}
+
+.numero2 {
+    margin:50px;
+    width:380px;
+    height:585px;
+    background-color: black;
+    box-shadow: 0 10px 30px rgba(0,0,0, 0.2);
+    padding:30px;
+    color:white;
+}
+
+.numero3 {
+    margin:50px;
+    width:380px;
+    height:585px;
+    background-color: black;
+    box-shadow: 0 10px 30px rgba(0,0,0, 0.2);
+    padding:30px;
+    color:white;
+}
+
+.textedesart {
+    text-align: justify;
+    color:white;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 21px;
+    width:350px;
+    height:255px;
+}
+
+@keyframes drop {
+    0%{
+        opacity:0;
+        transform:translateY(-40px);
+    }
+
+    100% {
+        opacity:1;
+        transform:translateY(0px);
+    }
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+a:hover {
+color: pink;
+}
+
+/*-------------------------FOOTER-----------------------------*/
+
+.lefooter  {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+    background-color: black;
+    margin:auto;
+    color:white;
+    text-align: center;
+}
+
+.partie1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.reseaux {
+    line-height: 2px;
+    padding: 10px;
+}
+
+.lefooter img {
+    width: 50px;
+    height:45px;
+    margin: auto;
+}
+
+.imagesreseaux {
+    padding:10px;
+}
+
+.copyright {
+    line-height: 2px;
+    padding: 10px;
+}
+
+.contactfooter {
+    line-height: 2px;
+    padding:10px;
+}
+
+/*--------------------LE RESPONSIVE------------------------*/
+
+@media screen and (max-width: 768px) {
+    body {
+    overflow-x:hidden;
+}
+
+    .nav-links{
+        position:absolute;
+        right: 0px;
+        height:92vh;
+        top:8vh;
+        font-size: 18px;
+        background-color:black;
+        color:white;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width:50%;
+        transform:translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    
+    .nav-links li {
+        opacity:0;
+    }
+
+    .burger {
+    display:block;
+    cursor:pointer;
+}
+
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity:0;
+        transform: translateX(50px);
+    }
+    to  {
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity:0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
