@@ -255,6 +255,39 @@ form {
     overflow-x:hidden;
 }
 
+.hipthrust{
+    width:450px;
+    height:950px;
+    margin-left: 0px;
+    padding:0px;
+}
+
+img {
+    width:380px;
+    height:400px;
+}
+
+.article2 p {
+    font-size: 12px;
+    margin:left;
+    padding:0px;
+}
+
+.explications {
+    border:none;
+    width:400px;
+}
+
+.lefooter {
+    display: flex;
+    flex-direction: column;
+}
+
+.partie1 {
+    display: flex;
+    flex-direction: column;
+}
+
     .nav-links{
         position:absolute;
         right: 0px;
